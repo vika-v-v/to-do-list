@@ -1,0 +1,8 @@
+.completed{
+    background-color: green;
+    text-decoration: line-through;
+}
+
+.not_completed{
+    background-color: red;
+}
