@@ -1,8 +1,76 @@
-.completed{
-    background-color: green;
-    text-decoration: line-through;
+* {
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(247, 247, 247); 
+    border: none;
+    background-color: rgb(12, 0, 31);
 }
 
+.not_completed, .completed {
+    padding: 1%;
+    margin: 0.5%;
+    width: 100%;
+}
+
+.completed{
+    background-image: linear-gradient(to right, rgba(219, 219, 219, 0.274) 20%, rgba(0, 0, 0, 0) 50%);
+    border-left: 10px rgba(114, 255, 58, 0.562) solid;
+    text-decoration: line-through;
+}   
+
 .not_completed{
-    background-color: red;
+    background-image: linear-gradient(to right, rgb(255, 110, 110) 5%, rgba(255, 63, 63, 0.493) 20%, rgba(255, 0, 170, 0) 50%);
+    border-left: 10px rgba(255, 21, 21, 0.562) solid;
+    text-decoration:none;
+}
+
+#add_item_btn{
+    background-color: transparent;
+    border: none;
+    padding: 3%;    
+}
+
+#icon_add_item{
+    color:rgb(255, 168, 139);
+}
+
+#icon_add_item:hover{
+    color:rgb(255, 252, 86);
+}
+
+
+#text_box {
+    background-color:rgb(66, 0, 128);
+    padding: 1%;
+    margin: 0.5%;
+}
+
+h2 {
+    padding: 2%;
+    margin: 0.5%;
+    text-align: center;
+}
+
+#list {
+    list-style-type: none;
+}
+
+#about_txt {
+    padding: 2%;
+    margin: 0.5%;
+    font-size: 80%;
+}
+
+hr {
+    border: .1px solid rgb(46, 46, 46);
+}
+
+button {
+    padding: 2%;
+    margin: 0.5%;
+    border: .1px solid rgb(46, 46, 46);
+}
+
+button:hover{
+    border: .5px solid rgb(255, 255, 255);
 }
