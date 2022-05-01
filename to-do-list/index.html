@@ -5,12 +5,27 @@
     <title>To-Do List</title>
     <script type="text/javascript" src="to-do.js"></script>
     <link rel="stylesheet" type="text/css" href="styling-to-do.css">
+    <script src="https://kit.fontawesome.com/2202405381.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+    </style>
 </head>
 <body>
-    <input type="button" value="Add item" onclick="item_added()"/>
-    <input type="text" value="Make to-do list" id="item_name"/>
-    <ul id="list">
-        <li><input class="not_completed" type="button" value="example" onclick="item_completed(this)"</li>
-    </ul>
+    <header>
+        <h2>Fancy to-do list</h2>
+    </header>
+    <main>
+        <button id="add_item_btn" onclick="item_added()"><i id="icon_add_item" class="fa fa-solid fa-feather fa-3x" alt="add item"></i></button>
+        <input type="text" value="Make to-do list" id="text_box"/>
+        <ul id="list">
+            <li><input class="not_completed" type="button" value="example" onclick="item_completed(this)"</li>
+        </ul>
+        <hr>
+    </main>
+    <footer>
+        <p id="about_txt">Author of this project: Viktoriia Vovchenko</p>
+        <button onclick="about_btn()">About</button>
+        <button onclick="about_btn(true)">Clear</button>
+    </footer>
 </body>
 </html>
